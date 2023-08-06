@@ -20,17 +20,17 @@ const ProductSlider = () => {
               {page.productList.map((product, index) => {
                 const {image, name, price, oldPrice} = product;
                 return (
-                  <div>
-                    <div>
+                  <div className='w-full max-w-[290px] h-[380px] text-left' key={index}>
+                    <div className='border hover:border-accent rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative transition'>
                       <img src={image.type} alt=''/>
-                      <div>
+                      <div className='absolute bottom-4 right-[22px] bg-gray-200 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 transition'>
                         <HiPlus className='text-xl text-primary'/>
                       </div>
                     </div>
-                    <div>{name}</div>
-                    <div>
+                    <div className='font-semibold lg:text-xl'>{name}</div>
+                    <div className='flex items-center gap-x-3'>
                       <div>$ {price}</div>
-                      <div>$ {oldPrice}</div>
+                      <div className='text-[15px] text-grey line-through'>$ {oldPrice}</div>
                     </div>
                   </div>
                 );
