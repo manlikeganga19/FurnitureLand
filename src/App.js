@@ -7,11 +7,13 @@ import Products from './components/Products';
 import Testimonial from './components/Testimonial'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
+import Header from './components/Header';
 
 
 const App = () => {
   return (
     <div className="w-full max-w-[1440px] mx-auto bg-white">
+      <Header/>
       <Hero/>
       <Features/>
       <NewItems/>
