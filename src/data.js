@@ -49,6 +49,10 @@ export const navigation = [
     name: 'contact',
     href: 'contact',
   },
+  {
+    name: 'login',
+    href: 'login',
+  },
 ];
 
 export const hero = {
